@@ -1,12 +1,13 @@
-/* eslint-disable react/jsx-no-undef */
 import React from 'react';
 import './App.scss';
-import { HomePageBody } from './pages/screens/HomePageBody/HomePageBody'
+import { HomePage } from './pages/HomePage/HomePage';
+import { HomePageHero } from './pages/HomePage/components/HomePageHero';
 
 function App() {
   return (
     <div className="App">
-      <HomePageBody/>
+      <HomePage />
+      <HomePageHero />
     </div>
   );
 
