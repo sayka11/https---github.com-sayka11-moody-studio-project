@@ -20,7 +20,6 @@ import terracotaVase from "../../../../assets/Image-home-page/terracota-vase.png
 import towelImage from "../../../../assets/Image-home-page/towel-image.svg"
 import trayFoot from "../../../../assets/Image-home-page/tray-with-foot-image.svg"
 import twillImage from "../../../../assets/Image-home-page/twill-image.svg"
-import vintageChair from "../../../../assets/Image-home-page/vintage-chair.png"
 import yellowBusIcon from "../../../../assets/Image-home-page/yellow-bus-icon.png"
 import yellowCardIcon from "../../../../assets/Image-home-page/yellow-card-icon.png"
 import yellowHeadphones from "../../../../assets/Image-home-page/yellow-headphones-icon.png"
