@@ -1,33 +1,17 @@
 import React from 'react';
 import './App.scss';
+import { Footer } from './Footer';
+import { Header } from './Header';
 import { HomePage } from './pages/HomePage/HomePage';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <Header />
       <HomePage />
-    </div>
+      <Footer />
+    </>
   );
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
 }
 
 export default App;
