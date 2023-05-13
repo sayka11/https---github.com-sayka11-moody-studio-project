@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+#yellowIconsWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 380px;
+  justify-content: center;
+
+  .busIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: grey;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+
+  .cardIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: grey;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+font-size: 12px;
+font-weight: 700;
+line-height: 14px;
+  }
+
+  .headphonesIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: grey;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+}
