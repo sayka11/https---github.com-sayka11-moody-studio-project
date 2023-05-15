@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+.detailsWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+
+    .inyVintageChair {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .chairTxt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 52px;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #323334;
+        width: 301px;
+        padding-top: 126px;
+    }
+
+    .largeTerracotaVase {
+        display: flex;
+        flex-direction: row;
+        background-color: #EAE9E7;
+        
+    }
+    
+    .vaseTxt {
+       display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #323334;
+        width: 380px;
+        padding-top: 150px;
+    }
+    .vasetxtWrap{
+        display: flex; 
+        flex-direction: column;
+         font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #323334;
+}
+.txt{display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #323334;}
+
+    button {
+        border-width: 1px;
+        width: 125px;
+        height: 45px;
+        border-color: black;
+        background-color: transparent;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,51 @@
+.simpleRating {
+    position: relative;
+    font-size: 50px;
+    display: inline-block;
+}
+.simpleRating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.simpleRatingItems {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.simpleRatingItem {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+.simpleRatingLabel {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #C4C4C4;
+}
+.simpleRatingLabel::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.simpleRatingItem:checked, 
+.simpleRatingItem:checked ~ .simple-rating__label {
+    color: #F2C94C;
+}
+
+.simpleRatingLabel:hover,
+.simpleRatingLabel:hover ~ .simple-rating__label,
+.simpleRatingLabel:checked ~ .simple-rating__label:hover {
+    color: #F2C94C;
+}
