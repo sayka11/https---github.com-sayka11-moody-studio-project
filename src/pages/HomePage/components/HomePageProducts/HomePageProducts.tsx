@@ -1,10 +1,21 @@
+/* eslint-disable prettier/prettier */
 import './HomePageProducts.scss';
-import { Product } from '../Product';
 import React from 'react';
-import towelImage from '../../../../assets/Image-home-page/towel-image.svg';
+import { Product } from '../Product';
+import { productsArray } from '../../../../others/objects';
 
 export const HomePageProducts = () => {
+
   return (
-    <Product imageSrc={towelImage} description={`Linen Beach Towel`} link="./explore-japan.html" stars={''} />
+    <div className="productsWrap1">
+      {productsArray.map((items: any) => {
+        console.log('items', items);
+        return <div></div>;
+      })}
+    </div>
   );
 };
+
+{
+  /* <Product imageSrc={fourPackCeramicCups} description={`4-pack Small Ceramic Plates`} link=" " price="30$" /> */
+}

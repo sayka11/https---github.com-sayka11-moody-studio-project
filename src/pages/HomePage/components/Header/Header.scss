@@ -1,71 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 .body {
   margin: 100%;
 }
+.header {
+  margin-left: 82px;
+  margin-right: 82px;
+  .page-header {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h1 {
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      color: #323334;
+    }
+    .img-header {
+      padding-top: 18px;
 
-.page-header {
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  h1 {
-    margin-left: 100px;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    color: #323334;
+      .bucket {
+        width: 34px;
+        height: 34px;
+        margin-left: 40px;
+      }
+      .man {
+        width: 22.17px;
+        height: 29.57px;
+        margin-left: 40px;
+      }
+      .heart {
+        width: 29.41px;
+        height: 27.58px;
+        margin-left: 40px;
+      }
+      .search-icon {
+        width: 27px;
+        height: 27px;
+        margin-left: 40px;
+      }
+    }
   }
-  .img-header {
-    padding-top: 18px;
-    margin-right: 102px;
-    .bucket {
-      width: 34px;
-      height: 34px;
-      margin-left: 40px;
-    }
-    .man {
-      width: 22.17px;
-      height: 29.57px;
-      margin-left: 40px;
-    }
-    .heart {
-      width: 29.41px;
-      height: 27.58px;
-      margin-left: 40px;
-    }
-    .search-icon {
-      width: 27px;
-      height: 27px;
-      margin-left: 40px;
-    }
-  }
-}
 
-.line {
-  width: 1115px;
-  height: 0px;
-  border: 1px solid #323334;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 85px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  .nav {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
+  .nav-bar {
+    .line {
+      border: 1px solid #323334;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hrefLinks {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      .nav {
+        font-family: 'Roboto';
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+      }
+    }
   }
 }
