@@ -1,0 +1,52 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #323334;
+    height: 413px;
+    padding-top: 35px;
+    margin-top: 80px;
+    .urbanOutfitters {
+      width: 273px;
+      .urban {
+        color: white;
+        font-size: 28px;
+      }
+      .textForUrban {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .adressLink {
+        color: white;
+      }
+      .socialLinksIcons{
+          display: flex;
+          padding-top: 50px;
+          gap: 60px;
+      }
+    }
+    .shopping {
+      width: 273px;
+      display: grid;
+      height: 290px;
+      .urban {
+        color: white;
+        font-size: 28px;
+      }
+      .shoppinglinks {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+    }
+    .fromTheBlog {
+      width: 273px;
+      display: grid;
+      height: 290px;
+      .urban {
+        color: white;
+        font-size: 28px;
+      }
+      .moreLinkWords {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+      }
+    }
+  }

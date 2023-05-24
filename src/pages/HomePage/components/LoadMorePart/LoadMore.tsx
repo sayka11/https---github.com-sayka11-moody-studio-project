@@ -18,13 +18,7 @@ export const LoadMore = () => (
                 </form>
                 <span>Thank You For Subscribing!</span>
             </div></div>
-    <script>const scriptURL = 'https://script.google.com/macros/s/AKfycbze4qqbt511_pm2iPrMEOgNSyNmZseaSFvHkN7gKxJae4rpCMsbvfEgq1hp1nC6xXOXww/exec'</script>
-    const form = document.forms['submit-to-google-sheet']
-    form.addEventListener('submit', e => {e.preventDefault() 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
+    
     </div>
 
 
