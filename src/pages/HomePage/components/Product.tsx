@@ -4,7 +4,6 @@ interface ProductProps {
   imageSrc: string;
   description: string;
   price: string;
-  price: string;
   link: string;
 }
 
