@@ -1,4 +1,4 @@
-import { Rating } from './RatingStars/Rating';
+import { Rating } from './RatingStars/RatingStars';
 
 export interface TopRatingProps {
   imageSrc: string;
