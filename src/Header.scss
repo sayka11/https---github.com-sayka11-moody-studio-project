@@ -20,27 +20,13 @@
       color: #323334;
     }
     .img-header {
-      padding-top: 18px;
+      display: flex;
+      gap: 65px;
 
-      .bucket {
-        width: 34px;
-        height: 34px;
-        margin-left: 40px;
-      }
-      .man {
-        width: 22.17px;
-        height: 29.57px;
-        margin-left: 40px;
-      }
-      .heart {
-        width: 29.41px;
-        height: 27.58px;
-        margin-left: 40px;
-      }
-      .search-icon {
-        width: 27px;
-        height: 27px;
-        margin-left: 40px;
+      & button {
+        background-color: white;
+        border: none;
+        cursor: pointer;
       }
     }
   }
@@ -58,12 +44,27 @@
       padding-bottom: 32px;
       margin-left: auto;
       margin-right: auto;
-      .nav {
+      .desktop-only {
         font-family: 'Roboto';
         font-weight: 700;
         text-decoration: none;
         color: black;
       }
     }
+  }
+}
+@media screen and (min-width: 860px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 859px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 859px) {
+  .line {
+    display: none !important;
   }
 }
