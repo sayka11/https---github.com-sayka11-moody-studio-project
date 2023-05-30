@@ -1,29 +1,41 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import './EmailInput.scss';
+import * as yup from 'yup';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 import React, { useState } from 'react';
+import emailIcon from '../../../../assets/Image-home-page/email-icon.png';
 
+const schema = yup
+  .object({
+    email: yup.string().required().email(),
+  })
+  .required();
+type FormData = yup.InferType<typeof schema>;
 export const EmailInput = () => {
-  const [firstName, setFirstName] = useState('');
-  const [enter, setEnter] = useState(false);
-
-  if (firstName.length > 1) {
-    setEnter(true);
-  }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    control,
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data: FormData) => setSubscribingSuccess(true);
+  const [subscribingSuccess, setSubscribingSuccess] = useState(false);
 
   return (
-    <>
-      <form>
+    <div className="subscription-form">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your e-mail address"
-            onChange={(e) => setFirstName(e.target.value)}
-          />
+          <input type="email" id="email" placeholder="Enter your e-mail address" {...register('email')} />
         </div>
-        {enter && firstName.length <= 0 ? <label>Thank You For Subscribing!</label> : ''}
+        <button>
+          <img className="emailImage" src={emailIcon} alt="" />
+        </button>
       </form>
-    </>
+      {subscribingSuccess && <label>Thank You For Subscribing!</label>}
+      <p className="validation-error">{errors.email?.message}</p>
+    </div>
   );
 };

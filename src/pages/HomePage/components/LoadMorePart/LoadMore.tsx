@@ -1,7 +1,6 @@
 import './LoadMore.scss';
 import { EmailInput } from '../Forms/EmailInput';
 import React from 'react';
-import emailIcon from '../../../../assets/Image-home-page/email-icon.png';
 
 export const LoadMore = () => {
   return (
@@ -14,9 +13,6 @@ export const LoadMore = () => {
         </div>
         <div className="inputWrap">
           <EmailInput />
-          <button>
-            <img className="emailImage" src={emailIcon} alt="" />
-          </button>
         </div>
       </div>
     </div>

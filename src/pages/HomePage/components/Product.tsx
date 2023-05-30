@@ -1,4 +1,4 @@
-import { Rating } from "./RatingStars/RatingStars";
+import RatingStars from '../components/RatingStars/RatingStars';
 
 interface ProductProps {
   imageSrc: string;
@@ -14,7 +14,7 @@ export const Product = (props: ProductProps) => {
       <img className="towelImage" src={imageSrc} alt="towelImage" />
       <div className="conteiner-1-1">
         <div className="txt-1">{description}</div>
-        <div className="RatingStars"> <Rating/> </div>
+        <div className="RatingStars"> <RatingStars/> </div>
         <div className="txt-2">{price}</div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const HomePageHero = () => {
         <img className="hotDeals" src={hotDeals} alt="chair" />
         <div className="hotDealstxt">
           <p>HOT DEALS THIS WEEK</p>
-          <h1>SALE UP 50% MODERN FURNITURE</h1>
+          <div className='h1txt'>SALE UP 50% <br/> MODERN FURNITURE</div>
           <button>VIEW NOW</button>
         </div>
       </div>

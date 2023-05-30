@@ -3,6 +3,7 @@ import contact from '../../../../assets/image-header-footer/peopleIcon.png';
 import favourite from '../../../../assets/image-header-footer/heartIcon.png';
 import order from '../../../../assets/image-header-footer/bagIcon.png';
 import search from '../../../../assets/image-header-footer/searchIcon.png';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -13,7 +14,7 @@ export const Header = () => {
             <h1>MOODY STUDIO</h1>
             <div className="img-header">
               <img className="search-icon" src={search} alt="" />
-              <img className="man" src={contact} alt="" />
+              <Link to="/edit">  <img className="man" src={contact} alt="" /> </Link>
               <img className="bucket" src={order} alt="" />
               <img className="heart" src={favourite} alt="" />
             </div>
