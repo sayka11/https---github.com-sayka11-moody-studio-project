@@ -1,3 +1,4 @@
+import { LogInPage } from "../LogInPage/LogIn";
 import { Header } from "./components/Header/Header";
 import { HomePageDetails } from "./components/HomePageDetails/HomePageDetails";
 import { HomePageFeatures } from "./components/HomePageFeatures/HomePageFeatures";
@@ -12,6 +13,7 @@ export const HomePage = () => {
       <HomePageHero />
       <HomePageDetails />
       <HomePageProducts/>
+      <LogInPage />
     </>
   );
 };

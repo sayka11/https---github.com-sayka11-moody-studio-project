@@ -9,7 +9,6 @@ export const HomePageProducts = () => {
   return (
     <div className="productsWrap1">
       {productsArray.map((items: any) => {
-        console.log('items', items);
         return <div></div>;
       })}
     </div>
