@@ -61,10 +61,40 @@
 @media screen and (max-width: 859px) {
   .desktop-only {
     display: none !important;
+    
   }
 }
 @media screen and (max-width: 859px) {
   .line {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .header{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 859px) {
+  .img-header {
+    gap: 40px !important;
+  }
+}
+@media (max-width: 859px) {
+  header .hrefLinks {
+    position: absolute;
+    flex-direction: column;
+    right: -1px;
+    top: 130px;
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    gap: 25px;
+  }
+  header .hrefLinks.visible {
+    transform: translateX(0);
   }
 }

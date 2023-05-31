@@ -18,7 +18,7 @@ export const Header = () => {
               <img className="mobile-only" src={order} alt="" />
               <img className="desktop-only" src={favourite} alt="" />
               <button className="mobile-only">
-                <img className="burgerMenuLogo" src={burgerMenuLogo} alt="" />
+                <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
               </button>
             </div>
           </div>
