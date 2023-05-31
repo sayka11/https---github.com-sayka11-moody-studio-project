@@ -50,3 +50,11 @@ footer {
       }
     }
   }
+  @media screen and (max-width: 860px) {
+    footer{
+     flex-direction: column;
+     align-items: center;
+     height: auto;
+    }
+   
+   }

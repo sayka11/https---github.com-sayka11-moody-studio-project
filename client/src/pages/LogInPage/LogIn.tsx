@@ -1,19 +1,42 @@
 /* eslint-disable prettier/prettier */
 import './LogIn.scss';
 import { useState } from 'react';
+import * as yup from 'yup';
 import LogInBack from '../../assets/Image-home-page/logInBack.webp';
 import googleIcon from '../../assets/Image-home-page/google-icon.svg';
 import facebookIcon from '../../assets/Image-home-page/facebook-icon.svg';
 import hideIcon from '../../assets/Image-home-page/hide.svg';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
+
+
+const schema = yup
+  .object({
+   
+    email: yup.string().required().email(),
+    password: yup.string().required().min(6),
+  })
+  .required();
+type FormData = yup.InferType<typeof schema>;
 
 export const LogInPage = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+
+  // api call will be here a bit later =)
+  const onSubmit = (data: FormData) => console.log(data);
   const [email, setEmail] = useState<string>();
   function verifyEmail(value: string) {
     setEmail(value);
   }
   console.log('email', email);
   return (
-    <div className="conteiner-page">
+    <div className="log-in-page">
       <div className="circle"></div>
       <div className="conteiner-1">
         <div className="log">Log in</div>
@@ -51,12 +74,13 @@ export const LogInPage = () => {
           </div>
         </div>
       </div>
-      <form id="form">
+      <form id="form" onSubmit={handleSubmit(onSubmit)}>
+
         <div className="conteiner-3">
           <div className="first-input">
             <div className="txt">Your email</div>
-            <input onChange={(e) => verifyEmail(e.target.value)} type="text" name="enter" id="email" />
-            <p id="errorEmail"></p>
+            <input  type="text" {...register('email')} id="email" />
+            <p className="validation-error">{errors.email?.message}</p>
           </div>
 
           <div className="second-input">
@@ -70,8 +94,8 @@ export const LogInPage = () => {
                 <div className="txt">Hide</div>
               </div>
             </div>
-            <input  type="password" name="enter" id="password" />
-            <p id="errorPass"></p>
+            <input type="password" {...register('password')} id="password" />
+            <p className="validation-error">{errors.password?.message}</p>
             <div className="forget">Forget your password</div>
           </div>
           <button type="submit" className="log-in" id="log-in">

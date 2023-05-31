@@ -6,7 +6,7 @@ import youtubeIcon from '../../../../assets/image-header-footer/youtubeIcon.png'
 
 export const Footer = () => {
   return (
-    <>
+     <>
       <footer>
         <div className="urbanOutfitters">
           <p className="urban">URBAN OUTFITTERS</p>

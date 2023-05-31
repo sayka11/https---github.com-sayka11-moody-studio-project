@@ -7,7 +7,7 @@ import signUpIcon from '../../assets/image-signUp-page/signUp-icon.jpg';
 
 export const SignUp = () => {
   return (
-    <div className="conteiner-page">
+    <div className="sign-up-page">
       <div>
         <img className="img" src={signUpIcon} alt="" />
       </div>
@@ -60,12 +60,8 @@ export const SignUp = () => {
 
         <div className="conteiner-3">
           <h3>Already have an account?</h3>
-          <Link to="" className="link-2">
-            <button className="log-in">
-              <div className="four-button">
-                <div>Log in</div>
-              </div>
-            </button>
+          <Link to="/login" className="log-in">
+            Log in
           </Link>
         </div>
       </div>
