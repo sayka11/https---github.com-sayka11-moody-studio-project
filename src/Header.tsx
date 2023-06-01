@@ -21,10 +21,10 @@ export const Header = () => {
               <a href="/" className="desktop-only">
                 <img  src={search} alt="" />
               </a>
-              <a href="/" className="mobile-only">
+              <a href="/" className="desktop-only">
                 <img  src={contact} alt="" />
               </a>
-              <a href="/" className="mobile-only">
+              <a href="/" className="desktop-only">
                 {' '}
                 <img  src={order} alt="" />
               </a>
