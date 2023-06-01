@@ -4,8 +4,13 @@ import favourite from './images/favorites icon.svg';
 import order from './images/order.svg';
 import search from './images/search icon.svg';
 import burgerMenuLogo from './images/burgerMenuLogo.svg';
+import { useState } from 'react';
 
 export const Header = () => {
+  const [visible, setVisible] = useState(false);
+  const onBurgerButtonClick = () => {
+    setVisible(!visible);
+  };
   return (
     <>
       <header>
@@ -13,11 +18,20 @@ export const Header = () => {
           <div className="page-header">
             <h1>MOODY STUDIO</h1>
             <div className="img-header">
-              <img className="desktop-only" src={search} alt="" />
-              <img className="mobile-only" src={contact} alt="" />
-              <img className="mobile-only" src={order} alt="" />
-              <img className="desktop-only" src={favourite} alt="" />
-              <button className="mobile-only">
+              <a href="/" className="desktop-only">
+                <img  src={search} alt="" />
+              </a>
+              <a href="/" className="mobile-only">
+                <img  src={contact} alt="" />
+              </a>
+              <a href="/" className="mobile-only">
+                {' '}
+                <img  src={order} alt="" />
+              </a>
+              <a href="/" className="desktop-only">
+                <img  src={favourite} alt="" />
+              </a>
+              <button className="mobile-only" onClick={onBurgerButtonClick}>
                 <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
               </button>
             </div>
@@ -25,31 +39,15 @@ export const Header = () => {
 
           <div className="nav-bar">
             <div className="line"></div>
-            <div className="hrefLinks">
-              <a href="/" className="desktop-only">
-                HOME
-              </a>
-              <a href="/" className="desktop-only">
-                STORE
-              </a>
-              <a href="/" className="desktop-only">
-                ACCOSSORIES
-              </a>
-              <a href="/" className="desktop-only">
-                BRAND
-              </a>
-              <a href="/" className="desktop-only">
-                PAGES
-              </a>
-              <a href="/" className="desktop-only">
-                ABOUT US
-              </a>
-              <a href="/" className="desktop-only">
-                NEWS
-              </a>
-              <a href="/" className="desktop-only">
-                CONTACT US
-              </a>
+            <div className={`hrefLinks ${visible ? 'visible' : ''}`}>
+              <a href="/">HOME</a>
+              <a href="/">STORE</a>
+              <a href="/">ACCOSSORIES</a>
+              <a href="/">BRAND</a>
+              <a href="/">PAGES</a>
+              <a href="/">ABOUT US</a>
+              <a href="/">NEWS</a>
+              <a href="/">CONTACT US</a>
             </div>
             <div className="line"></div>
           </div>
