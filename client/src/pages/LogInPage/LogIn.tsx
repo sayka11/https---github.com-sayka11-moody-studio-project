@@ -35,6 +35,7 @@ export const LogInPage = () => {
   }
   console.log('email', email);
   return (
+    <div className="LogIn-Wrapper">
     <div className="log-in-page">
       <div className="circle"></div>
       <div className="conteiner-1">
@@ -104,6 +105,7 @@ export const LogInPage = () => {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

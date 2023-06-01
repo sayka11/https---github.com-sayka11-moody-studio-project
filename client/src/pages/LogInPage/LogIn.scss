@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
+
+
 .log-in-page {
     display: flex;
     align-items: center;
@@ -11,6 +13,7 @@
     margin: auto;
     padding-top: 40px;
     margin-top: 22px;
+    
 
     .validation-error{color: red;}
 
@@ -22,7 +25,7 @@
         top: 0;
         bottom: 0;
         z-index: -1;
-        background: url(../../assets/Image-home-page/logInBack.webp) center / cover no-repeat;
+        background: url(../../assets/image-signUp-page/signUp-icon.jpg) center / cover no-repeat;
         filter: blur(5px);
     }
 
@@ -65,6 +68,7 @@
         font-weight: 400;
         line-height: 24px;
         color: #333333;
+        text-align: center;
     }
 
     .conteiner-2 {
@@ -161,6 +165,7 @@
         display: flex;
         flex-direction: column;
         gap: 3px;
+        
     }
 
     .second-input {
@@ -186,6 +191,7 @@
         width: 528px;
         height: 56px;
         border: 1px solid #66666659;
+        padding-left: 10px;
     }
 
     .txt {

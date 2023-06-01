@@ -7,9 +7,9 @@ import signUpIcon from '../../assets/image-signUp-page/signUp-icon.jpg';
 
 export const SignUp = () => {
   return (
+    
     <div className="sign-up-page">
-      <div>
-        <img className="img-s" src={signUpIcon} alt="" />
+      <div className='imgWrapper'>
       </div>
 
       <div className="conteiner-all">
