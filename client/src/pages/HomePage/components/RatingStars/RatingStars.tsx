@@ -1,24 +1,18 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import './RatingStars.scss';
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+import React, { useState } from 'react';
+import { Rate } from 'antd';
+
+const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
+
+const App: React.FC = () => {
+  const [value, setValue] = useState(3);
+  
   return (
-    <>
-      <div className="simple-rating">
-        <div className="simple-rating__items">
-          <input id='simple-rating__5' type="radio" className='simple-rating__item' name='simple-rating' value="5" />
-          <label htmlFor="simple-rating__5" className='simple-rating__label'></label>
-          <input id='simple-rating__4' type="radio" className='simple-rating__item' name='simple-rating' value="4" />
-          <label htmlFor="simple-rating__4" className='simple-rating__label'></label>
-          <input id='simple-rating__3' type="radio" className='simple-rating__item' name='simple-rating' value="3" />
-          <label htmlFor="simple-rating__3" className='simple-rating__label'></label>
-          <input id='simple-rating__2' type="radio" className='simple-rating__item' name='simple-rating' value="2" />
-          <label htmlFor="simple-rating__2" className='simple-rating__label'></label>
-          <input id='simple-rating__1' type="radio" className='simple-rating__item' name='simple-rating' value="1" />
-          <label htmlFor="simple-rating__1" className='simple-rating__label'></label>
-        </div>
-      </div>
-    </>
+    <span>
+      <Rate tooltips={desc} onChange={setValue} value={value} />
+      {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
+    </span>
   );
 };
+
+export default App;

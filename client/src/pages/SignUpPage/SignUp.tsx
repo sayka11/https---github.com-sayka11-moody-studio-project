@@ -9,7 +9,7 @@ export const SignUp = () => {
   return (
     <div className="sign-up-page">
       <div>
-        <img className="img" src={signUpIcon} alt="" />
+        <img className="img-s" src={signUpIcon} alt="" />
       </div>
 
       <div className="conteiner-all">
@@ -40,7 +40,7 @@ export const SignUp = () => {
             <div>
               <hr className="underline" />
             </div>
-            <div className="or">OR</div>
+            <div className="or-s">OR</div>
             <div>
               <hr className="underline" />
             </div>

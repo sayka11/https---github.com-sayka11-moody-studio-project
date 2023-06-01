@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import './LogIn.scss';
 import { useState } from 'react';
 import * as yup from 'yup';

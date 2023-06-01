@@ -30,7 +30,7 @@ export const EmailInput = () => {
         <div>
           <input type="email" id="email" placeholder="Enter your e-mail address" {...register('email')} />
         </div>
-        <button>
+        <button id="emailButton">
           <img className="emailImage" src={emailIcon} alt="" />
         </button>
       </form>
