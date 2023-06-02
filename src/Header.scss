@@ -30,6 +30,11 @@
         background-color: white;
         border: none;
         cursor: pointer;
+        padding-bottom: 10px;
+      }
+      .burger-menu{
+        display: flex;
+        gap: 72px;
       }
     }
   }

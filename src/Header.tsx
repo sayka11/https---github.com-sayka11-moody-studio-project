@@ -30,15 +30,17 @@ export const Header = () => {
               <a href="/" className="desktop-only">
                 <img src={favourite} alt="" />
               </a>
-              <button className="mobile-only" onClick={onBurgerButtonClick}>
+              <div className="burger-menu">
                 <a href="/" className="mobile-only">
                   <img src={contact} alt="" />
                 </a>
                 <a href="/" className="mobile-only">
                   <img src={order} alt="" />
                 </a>
-                <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
-              </button>
+                <button className="mobile-only" onClick={onBurgerButtonClick}>
+                  <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
+                </button>
+              </div>
             </div>
           </div>
 
