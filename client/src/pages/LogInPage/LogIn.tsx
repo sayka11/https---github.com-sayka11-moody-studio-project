@@ -7,6 +7,8 @@ import facebookIcon from '../../assets/Image-home-page/facebook-icon.svg';
 import hideIcon from '../../assets/Image-home-page/hide.svg';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
+import HideInput from "./components/HideInput";
+
 
 
 const schema = yup
@@ -42,7 +44,8 @@ export const LogInPage = () => {
         <div className="log">Log in</div>
         <div className="sign-up">
           Don’t have an ccount?
-          <div className="sign-up">Sign up</div>
+          <div className="sign-up">
+          <a className='signUpLink' href="/signUp">Sign up</a></div>
         </div>
       </div>
 
@@ -96,7 +99,7 @@ export const LogInPage = () => {
             </div>
             <input type="password" {...register('password')} id="password" />
             <p className="validation-error">{errors.password?.message}</p>
-            <div className="forget">Forget your password</div>
+            <div className="forget"><a className='forgetYourPass' href="/edit">Forget your password</a></div>
           </div>
           <button type="submit" className="log-in" id="log-in">
             <div className="third-button">

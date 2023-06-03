@@ -7,7 +7,7 @@ import signUpIcon from '../../assets/image-signUp-page/signUp-icon.jpg';
 
 export const SignUp = () => {
   return (
-    
+    <div className="Wrapper">
     <div className="sign-up-page">
       <div className='imgWrapper'>
       </div>
@@ -65,6 +65,7 @@ export const SignUp = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };
