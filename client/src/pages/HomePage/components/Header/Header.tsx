@@ -51,7 +51,7 @@ export const Header = () => {
             <a href="/">STORE</a>
             <a href="/">ACCOSSORIES</a>
             <a href="/">BRAND</a>
-            <a href="/">PAGES</a>
+            <Link  to="/profile">PAGES</Link>
             <a href="/">ABOUT US</a>
             <a href="/">NEWS</a>
             <a href="/">CONTACT US</a>

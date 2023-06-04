@@ -1,0 +1,24 @@
+.profilePageConteiner {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    background-color: #FFC297;
+
+    .orangePart {
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+
+        .pdIconsWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+
+            .orangeIcons {
+                height: 27px;
+                width: 33px;
+            }
+        }
+    }
+}
