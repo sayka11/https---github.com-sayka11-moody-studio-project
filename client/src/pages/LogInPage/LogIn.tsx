@@ -8,6 +8,7 @@ import hideIcon from '../../assets/Image-home-page/hide.svg';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import HideInput from "./components/HideInput";
+import showIcon from "../../assets/image-logIn-page/show.png";
 
 
 
@@ -21,6 +22,7 @@ const schema = yup
 type FormData = yup.InferType<typeof schema>;
 
 export const LogInPage = () => {
+  let [hide, setHide]= useState(true);
   const {
     register,
     handleSubmit,
@@ -92,12 +94,12 @@ export const LogInPage = () => {
                 <div className="txt">Your password</div>
               </div>
 
-              <div className="pass-2">
-                <img src={hideIcon} alt="icon" />
-                <div className="txt">Hide</div>
+              <div  role='presentation' onClick={()=>setHide((prev)=> !prev)} className="pass-2">
+                <img src={hide ? hideIcon : showIcon } alt="icon" />
+                <div className="txt">{hide ? "Hide": "Show"}</div>
               </div>
             </div>
-            <input type="password" {...register('password')} id="password" />
+            <input type= {hide ? "password" : "text"} {...register('password')} id="password" />
             <p className="validation-error">{errors.password?.message}</p>
             <div className="forget"><a className='forgetYourPass' href="/edit">Forget your password</a></div>
           </div>

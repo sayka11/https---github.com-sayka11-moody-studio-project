@@ -19,16 +19,16 @@ export const Header = () => {
           <h1>MOODY STUDIO</h1>
           <div className="img-header">
             <a href="/" className="desktop-only">
-              <img src={search} alt="" />
+              <img className='search' src={search} alt="" />
             </a>
             <Link  className="desktop-only" to="/signUp">
-              <img src={contact} alt="" />
+              <img className='contact' src={contact} alt="" />
              </Link>
             <a href="/" className="desktop-only">
-              <img src={order} alt="" />
+              <img className='order' src={order} alt="" />
             </a>
             <a href="/" className="desktop-only">
-              <img src={favourite} alt="" />
+              <img id="favourite" className='desktop-only' src={favourite} alt="" />
             </a>
             <div className="burger-menu">
               <a href="/" className="mobile-only">
@@ -37,7 +37,7 @@ export const Header = () => {
               <a href="/" className="mobile-only">
                 <img src={order} alt="" />
               </a>
-              <button className="mobile-only" onClick={onBurgerButtonClick}>
+              <button title="Title" className="mobile-only" onClick={onBurgerButtonClick}>
                 <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
               </button>
             </div>
