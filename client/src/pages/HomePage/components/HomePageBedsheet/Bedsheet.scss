@@ -136,6 +136,9 @@ gap: 10px;}
 }
 @media (max-width: 859px){
     .topRatingWrap{
+        .topRating{
+            padding-left: 160px;
+        }
     .topRatingProductsWrap{
         display: flex;
     flex-direction: column;
