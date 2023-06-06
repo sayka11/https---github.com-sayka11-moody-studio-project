@@ -21,9 +21,9 @@ export const Header = () => {
               <a href="/" className="desktop-only">
                 <img src={search} alt="" />
               </a>
-              <a href="/" className="desktop-only">
+              <Link className='desktop-only' to="signUp">
                 <img src={contact} alt="" />
-              </a>
+              </Link>
               <a href="/" className="desktop-only">
                 <img src={order} alt="" />
               </a>
@@ -51,7 +51,7 @@ export const Header = () => {
               <a href="/">STORE</a>
               <a href="/">ACCOSSORIES</a>
               <a href="/">BRAND</a>
-              <a href="/">PAGES</a>
+              <Link to="/profile">PAGES</Link>
               <a href="/">ABOUT US</a>
               <a href="/">NEWS</a>
               <a href="/">CONTACT US</a>
