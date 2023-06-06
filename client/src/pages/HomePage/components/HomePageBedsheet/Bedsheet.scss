@@ -134,3 +134,19 @@ flex-direction: column;
 align-items: flex-start;
 gap: 10px;}
 }
+@media (max-width: 859px){
+    .topRatingWrap{
+    .topRatingProductsWrap{
+        display: flex;
+    flex-direction: column;
+    }
+}
+}
+@media (max-width: 859px){
+    .bedSheetWrap{
+    .bedSheetTxtWrap{
+        margin-left: 0;
+        padding-left: 45px;
+    }
+}
+}

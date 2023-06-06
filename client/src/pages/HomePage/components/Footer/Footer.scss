@@ -23,7 +23,8 @@ footer {
     .socialLinksIcons{
         display: flex;
         padding-top: 50px;
-        gap: 60px;
+        justify-content: space-between;
+        padding-bottom: 25px;
     }
   }
   .shopping {

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 .header {
   margin-left: 82px;
   margin-right: 82px;
-
+  
   .page-header {
     max-width: 1920px;
     margin-left: auto;
@@ -10,9 +12,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .search{padding-top: 5px;}
-    .contact{padding-top: 4px;}
-    #favourite{padding-top: 5px;}
     h1 {
       font-family: 'Roboto';
       font-weight: 700;
@@ -24,14 +23,18 @@
     }
     .img-header {
       display: flex;
-      gap: 20px;
+      gap: 60px;
       padding-top: 20px;
-
 
       & button {
         background-color: white;
         border: none;
         cursor: pointer;
+        padding-bottom: 10px;
+      }
+      .burger-menu{
+        display: flex;
+        gap: 72px;
       }
     }
   }
@@ -49,12 +52,10 @@
       padding-bottom: 32px;
       margin-left: auto;
       margin-right: auto;
-      
       & a {
         text-decoration: none;
         color: black;
         font-weight: 700;
-        font-family: 'Roboto';
       }
     }
   }
@@ -62,6 +63,7 @@
 @media screen and (min-width: 860px) {
   .mobile-only {
     display: none !important;
+    padding-right: 20px !important;
   }
 }
 @media screen and (max-width: 859px) {
