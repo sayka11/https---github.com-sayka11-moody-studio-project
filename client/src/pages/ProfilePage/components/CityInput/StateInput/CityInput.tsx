@@ -16,7 +16,7 @@ const App: React.FC = () => (
     options={[
       {
         value: 'Baku',
-        label: 'Baku',
+        label: 'Tbilisi',
       },
       {
         value: 'Tbilisi',

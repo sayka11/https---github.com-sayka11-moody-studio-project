@@ -67,3 +67,11 @@ margin-top: 10px;}}
 
 
 }
+@media screen and (max-width: 859px) {
+    .buttonConteiner{
+  .wrapper {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+}

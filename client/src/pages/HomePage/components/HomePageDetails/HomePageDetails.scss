@@ -80,3 +80,22 @@
         line-height: 16px;
     }
 }
+@media screen and (max-width: 859px){
+    .detailsWrap{
+        .inyVintageChair{
+            height: 180px;
+            margin-left: 0;
+            .chairTxt{
+                padding-top: 40px;
+                width: 150px;
+                gap: 20px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }
+        .largeTerracotaVase{
+            display: none;
+        }
+    }
+}

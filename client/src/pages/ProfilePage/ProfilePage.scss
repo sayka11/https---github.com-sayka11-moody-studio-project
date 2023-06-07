@@ -1,450 +1,496 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+.profilePageContainer {
+  display: flex;
+  justify-content: space-between;
+ 
 
-.profilePageConteiner {
+  .orangePart {
     display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding-bottom: 30px;
+    width: 120px;
+    height: 100%;
+    background-color: #ffc297;
 
-    .orangePart {
-        display: flex;
-        flex-direction: column;
-        gap: 300px;
-        padding-bottom: 30px;
-        width: 120px;
-        height: 100%;
-        background-color: #FFC297;
+    .pdIconsWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      align-items: center;
+      margin-top: 30px;
 
-        .pdIconsWrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 100px;
-            align-items: center;
-            margin-top: 30px;
+      .orangeIcon-1 {
+        height: 27px;
+        width: 33px;
+      }
 
-            .orangeIcon-1 {
-                height: 27px;
-                width: 33px;
-            }
+      .orangeIcon-2 {
+        height: 32.5px;
+        width: 26.66666603088379px;
+      }
 
-            .orangeIcon-2 {
-                height: 32.5px;
-                width: 26.66666603088379px;
-            }
+      .orangeIcon-3 {
+        height: 29.75px;
+        width: 29.333332px;
+      }
 
-            .orangeIcon-3 {
-                height: 29.75px;
-                width: 29.333332px;
-            }
+      .orangeIcon-4 {
+        height: 21.633333206176758px;
+        width: 33.33333206176758px;
+      }
 
-            .orangeIcon-4 {
-                height: 21.633333206176758px;
-                width: 33.33333206176758px;
-            }
-
-            .orangeIcon-5 {
-                height: 26px;
-                width: 26.66666603088379px;
-            }
-        }
-
-        .orangeCircle {
-            display: flex;
-            border-radius: 50%;
-            width: 81px;
-            height: 81px;
-            background-color: #FF7008;
-            align-self: center;
-
-            .setting {
-                padding-top: 17px;
-                padding-left: 17px;
-            }
-        }
+      .orangeIcon-5 {
+        height: 26px;
+        width: 26.66666603088379px;
+      }
     }
 
-    .settingsPart {
+    .orangeCircle {
+      display: flex;
+      border-radius: 50%;
+      width: 81px;
+      height: 81px;
+      background-color: #ff7008;
+      align-self: center;
+
+      .setting {
+        padding-top: 17px;
+        padding-left: 17px;
+      }
+    }
+  }
+
+  .settingsPart {
+    display: flex;
+    margin-left: 30px;
+    width: 342px;
+    border-right: 1px solid #858585;
+
+    .settinsPartContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      gap: 90px;
+
+      .arrowWrap {
         display: flex;
-        margin-left: 30px;
-        width: 342px;
-        border-right: 1px solid #858585;
+        align-items: center;
+        gap: 41px;
 
-        .settinsPartConteiner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-            gap: 90px;
-
-            .arrowWrap {
-                display: flex;
-                align-items: center;
-                gap: 41px;
-
-                .blackArrow {
-                    height: 24px;
-                    width: 14.819999694824219px;
-                }
-
-                .arrowTxt {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 32px;
-                    font-weight: 700;
-                    line-height: 38px;
-                    text-decoration: none;
-                    color: black;
-                }
-            }
-
-            .editProfileWrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 95px;
-
-                .editWrap {
-                    display: flex;
-                    gap: 34px;
-
-                    .penIcon {
-                        height: 33.75px;
-                        width: 33.75468444824219px;
-                    }
-
-                    .editTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 28px;
-                        font-weight: 700;
-                        line-height: 33px;
-                        text-decoration: none;
-                        color: black;
-                    }
-                }
-
-                .notificationWrap {
-                    display: flex;
-                    gap: 38px;
-
-                    .bellIcon {
-                        height: 32.5px;
-                        width: 26.66666603088379px;
-                    }
-
-                    .greyTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 28px;
-                        font-weight: 500;
-                        line-height: 33px;
-                        color: #858585;
-                        text-decoration: none;
-                    }
-                }
-
-                .securityWrap {
-                    display: flex;
-                    gap: 38px;
-
-                    .lockIcon {
-                        height: 35px;
-                        width: 26.66666603088379px;
-                    }
-
-                    .greyTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 28px;
-                        font-weight: 500;
-                        line-height: 33px;
-                        color: #858585;
-                        text-decoration: none;
-
-                    }
-                }
-
-                .appearanceWrap {
-                    display: flex;
-                    gap: 38px;
-
-                    .settingsIcon {
-                        height: 33.33333206176758px;
-                        width: 32.423744201660156px;
-                    }
-
-                    .greyTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 28px;
-                        font-weight: 500;
-                        line-height: 33px;
-                        color: #858585;
-                        text-decoration: none;
-
-                    }
-                }
-
-                .helpWrap {
-                    display: flex;
-                    gap: 38px;
-
-                    .questionIcon {
-                        height: 33.33333206176758px;
-                        width: 33.33333206176758px;
-                    }
-
-                    .greyTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 28px;
-                        font-weight: 500;
-                        line-height: 33px;
-                        color: #858585;
-                        text-decoration: none;
-
-                    }
-
-                }
-            }
+        .blackArrow {
+          height: 24px;
+          width: 14.819999694824219px;
         }
 
-    }
+        .arrowTxt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 38px;
+          text-decoration: none;
+          color: black;
+        }
+      }
 
-    .editProfilePart {
+      .editProfileWrapper {
         display: flex;
         flex-direction: column;
-        gap: 60px;
-        margin-left: 135px;
+        gap: 95px;
 
         .editWrap {
-            display: flex;
-            gap: 525px;
+          display: flex;
+          gap: 34px;
 
-            .editProfileText {
-                font-family: "Roboto", sans-serif;
-                font-size: 45px;
-                font-weight: 600;
-                line-height: 53px;
-            }
+          .penIcon {
+            height: 33.75px;
+            width: 33.75468444824219px;
+          }
 
-            .profileImage {
-                height: 120px;
-                width: 120px;
-            }
+          .editTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 33px;
+            text-decoration: none;
+            color: black;
+          }
         }
 
-        .inputWrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .notificationWrap {
+          display: flex;
+          gap: 38px;
 
-            .firstNameinputWrap {
-                display: flex;
-                gap: 65px;
+          .bellIcon {
+            height: 32.5px;
+            width: 26.66666603088379px;
+          }
 
-                .firstNameInput {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-
-                    .firstName {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 26px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: black;
-                    }
-
-                    #first {
-                        height: 70px;
-                        width: 405px;
-                        border-radius: 5px;
-                        border-color: #858585;
-
-                    }
-                }
-
-                .secondNameinput {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-
-                    .secondName {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 26px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: black;
-                    }
-
-                    #second {
-                        height: 70px;
-                        width: 405px;
-                        border-radius: 5px;
-                        border-color: #858585;
-
-                    }
-                }
-
-            }
-
-            .emailInputWrap {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-
-                .Email {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 26px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    color: black;
-                }
-
-                #third {
-                    height: 70px;
-                    width: 873px;
-                    border-radius: 5px;
-                    border-color: #858585;
-                }
-            }
-
-            .addressInputWrap {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-
-                .addressInput {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 26px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    color: black;
-                }
-
-                #fourth {
-                    height: 70px;
-                    width: 873px;
-                    border-radius: 5px;
-                    border-color: #858585;
-                }
-            }
-
-            .contactInputWrap {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-
-                .contactInput {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 26px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    color: black;
-                }
-
-                #fifth {
-                    height: 70px;
-                    width: 873px;
-                    border-radius: 5px;
-                    border-color: #858585;
-                }
-            }
-
-            .countryAndCityInputWrap {
-                display: flex;
-                gap: 40px;
-
-                .countryInput {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-
-                    .countryTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 26px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: black;
-                    }
-                }
-
-                .cityInput {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-
-                    .cityTxt {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 26px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: black;
-                    }
-                }
-            }
-
-            .passwordInputWrap {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-
-                .passTxt {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 26px;
-                    font-weight: 600;
-                    line-height: 30px;
-                    color: black;
-                }
-                .ant-input-password {
-                    position: relative;
-                    display: inline-flex;
-                    width: 840px;
-                    height: 70px;
-                    min-width: 0;
-                    padding: 4px 11px;
-                    color: rgba(0, 0, 0, 0.88);
-                    font-size: 20px;
-                    line-height: 1.5714285714285714;
-                    background-color: #ffffff;
-                    background-image: none;
-                    border-width: 1px;
-                    border-style: solid;
-                    border-color: #d9d9d9;
-                    border-radius: 6px;
-                    transition: all 0.2s;
-                }
-            }
+          .greyTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+            color: #858585;
+            text-decoration: none;
+          }
         }
 
-        .buttonWrapper {
-            display: flex;
-            gap: 40px;
-            justify-content: flex-start;
+        .securityWrap {
+          display: flex;
+          gap: 38px;
 
-            .cancelButton {
-                height: 55px;
-                width: 180px;
-                border-radius: 5px;
-                border-color: #FF7008;
-                background-color: white;
+          .lockIcon {
+            height: 35px;
+            width: 26.66666603088379px;
+          }
 
-                .cancelTxt {
-                    font-family: "Roboto", sans-serif;
-                    font-size: 28px;
-                    font-weight: 400;
-                    line-height: 33px;
-                    color:#FF7008;
-                }
-            }
-
-            .saveButton {
-                height: 55px;
-                width: 180px;
-                border-radius: 5px;
-                background-color: #FF7008;
-                .saveTxt{
-                    font-family: "Roboto", sans-serif;
-                    font-size: 28px;
-                    font-weight: 400;
-                    line-height: 33px;
-                    color: white;
-                }
-            }
+          .greyTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+            color: #858585;
+            text-decoration: none;
+          }
         }
+
+        .appearanceWrap {
+          display: flex;
+          gap: 38px;
+
+          .settingsIcon {
+            height: 33.33333206176758px;
+            width: 32.423744201660156px;
+          }
+
+          .greyTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+            color: #858585;
+            text-decoration: none;
+          }
+        }
+
+        .helpWrap {
+          display: flex;
+          gap: 38px;
+
+          .questionIcon {
+            height: 33.33333206176758px;
+            width: 33.33333206176758px;
+          }
+
+          .greyTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 33px;
+            color: #858585;
+            text-decoration: none;
+          }
+        }
+      }
     }
+  }
+
+  .editProfilePart {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-left: 135px;
+    margin-top: 80px;
+
+    .editWrap {
+      display: flex;
+      gap: 525px;
+
+      .editProfileText {
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 53px;
+      }
+
+      .profileImage {
+        height: 120px;
+        width: 120px;
+      }
+    }
+
+    .inputWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .firstNameinputWrap {
+        display: flex;
+        gap: 40px;
+
+        .firstNameInput {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .firstName {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 30px;
+            color: black;
+          }
+
+          #first {
+            height: 70px;
+            width: 405px;
+            border: none;
+            border-radius: 5px;
+            border: 0.5px solid #dbdbdb;
+            padding-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            outline: none;
+          }
+        }
+
+        .secondNameinput {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .secondName {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 30px;
+            color: black;
+          }
+
+          #second {
+            height: 70px;
+            width: 405px;
+            border: none;
+            border-radius: 5px;
+            border: 0.5px solid #dbdbdb;
+            padding-left: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            outline: none;
+          }
+        }
+      }
+
+      .emailInputWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .Email {
+          font-family: 'Roboto', sans-serif;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 30px;
+          color: black;
+        }
+
+        #third {
+          height: 70px;
+          width: 850px;
+          border: none;
+          border-radius: 5px;
+          border: 0.5px solid #dbdbdb;
+          padding-left: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          outline: none;
+        }
+      }
+
+      .addressInputWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .addressInput {
+          font-family: 'Roboto', sans-serif;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 30px;
+          color: black;
+        }
+
+        #fourth {
+          height: 70px;
+          width: 850px;
+          border: none;
+          border-radius: 5px;
+          border: 0.5px solid #dbdbdb;
+          padding-left: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          outline: none;
+        }
+      }
+
+      .contactInputWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .contactInput {
+          font-family: 'Roboto', sans-serif;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 30px;
+          color: black;
+        }
+
+        #fifth {
+          height: 70px;
+          width: 850px;
+          border: none;
+          border-radius: 5px;
+          border: 0.5px solid #dbdbdb;
+          padding-left: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          outline: none;
+        }
+      }
+
+      .countryAndCityInputWrap {
+        display: flex;
+        gap: 45px;
+
+        .countryInput {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .countryTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 30px;
+            color: black;
+          }
+        }
+
+        .cityInput {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .cityTxt {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 30px;
+            color: black;
+          }
+        }
+      }
+
+      .passwordInputWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .passTxt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 30px;
+          color: black;
+        }
+        .ant-input-password {
+          position: relative;
+          display: inline-flex;
+          width: 840px;
+          height: 70px;
+          min-width: 0;
+          padding: 4px 11px;
+          color: rgba(0, 0, 0, 0.88);
+          font-size: 20px;
+          line-height: 1.5714285714285714;
+          background-color: #ffffff;
+          background-image: none;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #d9d9d9;
+          border-radius: 6px;
+          transition: all 0.2s;
+        }
+      }
+    }
+
+    .buttonWrapper {
+      display: flex;
+      gap: 40px;
+      justify-content: flex-start;
+
+      .cancelButton {
+        height: 55px;
+        width: 180px;
+        background-color: white;
+        border: none;
+        border: 1px solid #ff7008;
+        border-radius: 5px;
+
+        .cancelTxt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 33px;
+          color: #ff7008;
+        }
+      }
+
+      .saveButton {
+        height: 55px;
+        width: 180px;
+        border: none;
+        background-color: #ff7008;
+        border-radius: 5px;
+
+        .saveTxt {
+          font-family: 'Roboto', sans-serif;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 33px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .lastContainer {
+    display: flex;
+    .iconsWrapper {
+      display: flex;
+      margin-top: 50px;
+      gap: 35px;
+      margin-left: 112px;
+
+      .bellInCircle {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+      }
+      .profilePhoto-2 {
+        height: 38px;
+        width: 38px;
+      }
+    }
+  }
 }
-
-

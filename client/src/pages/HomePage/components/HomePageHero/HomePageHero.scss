@@ -56,3 +56,28 @@ font-weight: 700;
 line-height: 16px;
   }
 }
+@media screen and (max-width: 859px){
+  .heroConteiner{
+    border: none;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+  }
+   .heroComponents{
+    height: 180px;
+    margin-top: 85px;
+    gap: 0;
+    
+    .hotDealstxt{
+       margin-top: 0;
+       gap: 0;
+      p{
+        font-size: 14px;
+       
+      }
+      .h1txt{
+        font-size: 20px;
+      }
+    }
+  }
+    }

@@ -38,3 +38,13 @@ gap: 10px;}
                 gap: 30px;
             }
 }
+@media (max-width: 859px){
+    .firstProductsWrap{
+        .conteiner-1{
+            flex-direction: column;
+        }
+        .conteiner-2{
+            display: none;
+        }
+    }
+}

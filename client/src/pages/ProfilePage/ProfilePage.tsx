@@ -21,7 +21,7 @@ import Password from 'antd/es/input/Password';
 
 export const ProfilePage = () => {
     return (
-        <div className="profilePageConteiner">
+        <div className="profilePageContainer">
             <div className="orangePart">
                 <div className="pdIconsWrapper">
                     <img src={pd} alt="" />
@@ -36,7 +36,7 @@ export const ProfilePage = () => {
                 </div>
             </div>
             <div className="settingsPart">
-                <div className="settinsPartConteiner">
+                <div className="settinsPartContainer">
                     <div className="arrowWrap">
                         <img className='blackArrow' src={blackArrow} alt="" />
                         <a href="/" className='arrowTxt'>settings</a>
@@ -116,6 +116,15 @@ export const ProfilePage = () => {
                     <div className='saveTxt'>Save</div>
                         </button>
                 </div>
+            </div>
+            <div className="lastContainer">
+             <div className="iconsWrapper">
+                <div className="bellInCircle">
+                    <img className='"bellInCircle' src={bellInCircle} alt="/" />
+                </div>
+                <img className='profilePhoto-2' src={profilePhoto} alt="/" />
+             </div>
+
             </div>
         </div>
     );
