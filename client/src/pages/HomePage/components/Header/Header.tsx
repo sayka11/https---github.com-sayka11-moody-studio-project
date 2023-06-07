@@ -37,7 +37,7 @@ export const Header = () => {
                 <a href="/" className="mobile-only">
                   <img src={order} alt="" />
                 </a>
-                <button className="mobile-only" onClick={onBurgerButtonClick}>
+                <button title="Title" className="mobile-only" onClick={onBurgerButtonClick}>
                   <img className="burgerMenuLogo mobile-only" src={burgerMenuLogo} alt="" />
                 </button>
               </div>
