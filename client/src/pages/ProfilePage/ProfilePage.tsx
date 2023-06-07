@@ -120,9 +120,11 @@ export const ProfilePage = () => {
             <div className="lastContainer">
              <div className="iconsWrapper">
                 <div className="bellInCircle">
+
                     <img className='"bellInCircle' src={bellInCircle} alt="/" />
                 </div>
                 <img className='profilePhoto-2' src={profilePhoto} alt="/" />
+
              </div>
 
             </div>
